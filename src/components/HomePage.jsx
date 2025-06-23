@@ -3,14 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
+
 import hero from "../../public/hero.jpg";
-import logo from "../../public/logo2.png";
+
 import dancer from "../../public/dancer.jpg";
 import speaker from "../../public/speaker.jpg";
 import dj from "../../public/dj.jpg";
@@ -36,21 +31,7 @@ export default function HomePage() {
     <div className="flex flex-col min-h-screen">
       {/* Navbar Starts */}
       //TODO MAKE IT RESPOSNIVE
-      <nav className="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-[#2c0b0e] via-[#5b0f12] to-[#b5151b] text-white shadow-md fixed top-0 w-full z-20">
-        <Link href="/" className="text-2xl font-bold text-purple-600">
-          <Image src={logo} height={100} width={100} />
-        </Link>
-        <div className="space-x-6 flex justify-between items-center text-lg font-semibold">
-          {navLinks.map((link, index) => (
-            <Link
-              className="flex justify-between items-center gap-2"
-              href={link.url}
-            >
-              {link.icon} {link.title}
-            </Link>
-          ))}
-        </div>
-      </nav>
+     
       {/* Hero Portion */}
       <section className="relative h-[75vh] w-full mt-12">
         <Image
@@ -77,8 +58,19 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      {/* about us  */}
+      <section className="bg-white px-6 md:px-20 py-16 text-center">
+  <h2 className="text-3xl font-bold text-gray-800 mb-6">About Artistly</h2>
+  <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+    Artistly.com is designed for Event Planners and Artist Managers to connect seamlessly. 
+    Event planners can browse through artist profiles, shortlist their preferences, 
+    and raise booking or availability requests. Meanwhile, Artist Managers can onboard artists, 
+    receive booking leads, and manage all responses efficiently via an intuitive dashboard.
+  </p>
+</section>
+
       {/* Categories */}
-      <section className="px-6 md:px-20 py-16 flex-1">
+      <section className="px-6 md:px-20 py-16 flex-1"> 
         <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
           Browse by Category
         </h2>
@@ -105,32 +97,32 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-      {/* Footer */}
-      <footer className="bg-gray-100 py-8 px-6 md:px-20">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <span className="text-lg font-bold text-purple-600">Artistly</span>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="#" className="text-gray-700 hover:text-purple-600">
-              Privacy
-            </Link>
-            <Link href="#" className="text-gray-700 hover:text-purple-600">
-              Terms
-            </Link>
-            <Link href="#" className="text-gray-700 hover:text-purple-600">
-              Contact
-            </Link>
-          </div>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <FaFacebookF className="text-gray-600 hover:text-purple-600" />
-            <FaInstagram className="text-gray-600 hover:text-purple-600" />
-            <FaLinkedinIn className="text-gray-600 hover:text-purple-600" />
-            <FaTwitter className="text-gray-600 hover:text-purple-600" />
-          </div>
-        </div>
-        <p className="text-center text-gray-500 mt-6 text-sm">
-          © {new Date().getFullYear()} Artistly. All rights reserved.
-        </p>
-      </footer>
+
+          {/* cta */}
+
+          <section className="bg-gradient-to-r from-red-700 to-black text-white py-20 px-6 md:px-20 text-center">
+  <h2 className="text-4xl font-bold mb-4">Connect. Book. Perform.</h2>
+  <p className="text-lg mb-6 max-w-2xl mx-auto">
+    Whether you're planning an event or managing artists — Artistly helps you connect, collaborate, and shine. 
+    Start your journey now!
+  </p>
+  <div className="flex justify-center space-x-4">
+    <Link href="/listing">
+      <button className="bg-white text-red-700 font-semibold px-6 py-3 rounded-full hover:bg-red-100 transition">
+        Explore Artists
+      </button>
+    </Link>
+    <Link href="/onboard">
+      <button className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-red-700 transition">
+        Onboard Artists
+      </button>
+    </Link>
+  </div>
+</section>
+
+
+
+      
     </div>
   );
 }
