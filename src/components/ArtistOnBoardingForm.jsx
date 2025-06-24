@@ -65,7 +65,7 @@ export default function ArtistOnboardingForm() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#2c0b0e] via-[#5b0f12] to-[#b5151b] py-12 px-4">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
+        {/* HEADING  */}
         <div className="text-center text-white mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Artist Onboarding

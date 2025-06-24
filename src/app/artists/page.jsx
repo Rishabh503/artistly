@@ -16,6 +16,7 @@ const { filters, setFilters, filteredData, getAvailableOptions } = useFilters(ar
       <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
         Explore Artists
       </h2>
+{/* IMPORTING THE FILTER CONTROL COMPONENT  */}
 
     <FilterControls
   filters={filters}
@@ -31,6 +32,7 @@ const { filters, setFilters, filteredData, getAvailableOptions } = useFilters(ar
           </p>
         ) : (
           filteredData.map((artist) => (
+            // ARTIST CARD 
             <ArtistCard key={artist.id} artist={artist} />
           ))
         )}
