@@ -1,10 +1,9 @@
 "use client"
-import { useState } from "react";
-
 import artistData from "@/data/artists.json"
 import ArtistCard from "@/components/ArtistCard";
 import FilterControls from "@/components/FilterControls";
 import { useFilters } from "@/lib/useFilters";
+
 
 export default function ArtistListing() {
  const filterKeys = ["category", "location", "price"];
