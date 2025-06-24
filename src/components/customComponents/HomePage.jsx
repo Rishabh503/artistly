@@ -12,6 +12,7 @@ import dj from "../../../public/assets/dj.jpg";
 import singer from "../../../public/assets/singer2.jpg";
 
 import { ChartSpline, Handshake, Users } from "lucide-react";
+import { Cta } from "./Cta";
 
 const navLinks = [
   { url: "/artists", icon: <Users />, title: "Artists" },
@@ -98,25 +99,7 @@ export default function HomePage() {
 
           {/* cta */}
 
-          <section className="bg-gradient-to-r from-red-700 to-black text-white py-20 px-6 md:px-20 text-center">
-  <h2 className="text-4xl font-bold mb-4">Connect. Book. Perform.</h2>
-  <p className="text-lg mb-6 max-w-2xl mx-auto">
-    Whether you're planning an event or managing artists — Artistly helps you connect, collaborate, and shine. 
-    Start your journey now!
-  </p>
-  <div className="flex justify-center space-x-4">
-    <Link href="/listing">
-      <button className="bg-white text-red-700 font-semibold px-6 py-3 rounded-full hover:bg-red-100 transition">
-        Explore Artists
-      </button>
-    </Link>
-    <Link href="/onboard">
-      <button className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-red-700 transition">
-        Onboard Artists
-      </button>
-    </Link>
-  </div>
-</section>
+          <Cta/>
 
 
 

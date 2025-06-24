@@ -1,6 +1,6 @@
 "use client";
 import ArtistOnboardingForm from "@/app/(pages)/onboardArtist/__components/ArtistOnBoardingForm";
-import FooterCta from "@/components/customComponents/FooterCta";
+import FooterCta from "@/app/(pages)/onboardArtist/__components/FooterCta";
 import { benefits } from "../../../../public/data/benefits";
 
 export default function ArtistOnboardingPage() {
