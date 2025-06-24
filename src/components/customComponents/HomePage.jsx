@@ -4,12 +4,12 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
-import hero from "../../public/hero.jpg";
+import hero from "../../../public/assets/hero.jpg";
 
-import dancer from "../../public/dancer.jpg";
-import speaker from "../../public/speaker.jpg";
-import dj from "../../public/dj.jpg";
-import singer from "../../public/singer2.jpg";
+import dancer from "../../../public/assets/dancer.jpg";
+import speaker from "../../../public/assets/speaker.jpg";
+import dj from "../../../public/assets/dj.jpg";
+import singer from "../../../public/assets/singer2.jpg";
 
 import { ChartSpline, Handshake, Users } from "lucide-react";
 
@@ -29,9 +29,7 @@ const categories = [
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Navbar Starts */}
-      //TODO MAKE IT RESPOSNIVE
-     
+      
       {/* Hero Portion */}
       <section className="relative h-[75vh] w-full mt-12">
         <Image

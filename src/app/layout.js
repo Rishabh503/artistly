@@ -1,8 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
-import logo from "../../public/logo2.png"
+import NavBar from "@/components/customComponents/NavBar";
+import Footer from "@/components/customComponents/Footer";
+import logo from "../../public/assets/logo2.png"
+import { UserProvider } from "@/context/userContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +15,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
+//metadata according to the website
 export const metadata = {
   title: "Artistly – Discover and Book Artists for Events",
   description: "Explore and book top singers, DJs, and performers across India for your next event. Artistly connects event organizers with talented artists.",
@@ -39,9 +42,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavBar/>
-        {children}
-        <Footer/>
+        <UserProvider>
+          <NavBar/>
+          {children}
+          <Footer/>
+        </UserProvider>
       </body>
     </html>
   );

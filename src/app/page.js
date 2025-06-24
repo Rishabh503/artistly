@@ -1,4 +1,4 @@
-import HomePage from "@/components/HomePage";
+import HomePage from "@/components/customComponents/HomePage";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 

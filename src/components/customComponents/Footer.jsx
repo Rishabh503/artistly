@@ -7,7 +7,8 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { Heart, Star } from "lucide-react";
-
+import Image from 'next/image';
+import logo from "../../../public/assets/logo2.png"
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-[#2c0b0e] via-[#5b0f12] to-[#b5151b] py-12 px-6 md:px-20 border-t border-white/10">
@@ -16,9 +17,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           {/* Logo */}
           <div className="mb-6 md:mb-0">
-            <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Artistly
-            </span>
+             <Link href="/" className="text-2xl font-bold text-purple-600">
+          <Image src={logo} height={100} width={100} alt="logo" />
+        </Link>
             <p className="text-gray-300 text-sm mt-2 max-w-xs">
               Connecting artists with opportunities worldwide
             </p>
