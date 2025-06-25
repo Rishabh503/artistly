@@ -6,7 +6,7 @@ import { benefits } from "../../../../public/data/benefits";
 export default function ArtistOnboardingPage() {
   
   return (
-    <div className="min-h-screen mt-10 bg-gradient-to-br from-[#2c0b0e] via-[#5b0f12] to-[#b5151b]">
+    <div className="min-h-screen mt-4 sm:mt-10 bg-gradient-to-br from-[#2c0b0e] via-[#5b0f12] to-[#b5151b]">
       {/* ADDING THE  BENIFITS Section */}
       <div className="py-16 px-4">
         <div className="max-w-6xl mx-auto">

@@ -27,7 +27,7 @@ export default function ArtistListing() {
   );
 
   return (
-    <section className="px-6 md:px-20 mt-16 py-16">
+    <section className="px-6 md:px-20 mt-4 sm:mt-16 py-16">
       <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
 
         {/* using conditonal rendering to give the heading  */}

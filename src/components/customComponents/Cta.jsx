@@ -10,7 +10,7 @@ export const Cta = () => {
     Whether you're planning an event or managing artists — Artistly helps you connect, collaborate, and shine. 
     Start your journey now!
   </p>
-  <div className="flex justify-center space-x-4">
+  <div className="flex sm:flex-row gap-4 flex-col items-center justify-center space-x-4">
     <Link href="/artist">
       <Button className="bg-white text-red-700 font-semibold px-6 py-3 rounded-full hover:bg-red-100 transition">
         Explore Artists
@@ -23,7 +23,7 @@ export const Cta = () => {
     </Link>
     <Link href="/dashboard">
       <Button className="bg-white text-red-700 font-semibold px-6 py-3 rounded-full hover:bg-red-100 transition">
-        Manage
+        Manage Artist
       </Button>
     </Link>
   </div>

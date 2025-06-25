@@ -40,7 +40,7 @@ export default function HomePage() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 max-w-2xl mx-auto h-full flex flex-col items-center justify-center text-center px-4">
+        <div className="relative z-10 max-w-2xl mt-32 sm:mt-2 mx-auto h-full flex flex-col items-center justify-center text-center px-4">
           <div className="bg-white/20 backdrop-blur-lg rounded-xl p-8">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Connect With Top Artists
